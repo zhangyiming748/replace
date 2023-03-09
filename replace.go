@@ -48,7 +48,6 @@ func Replace(str string) string {
 	str = strings.Replace(str, "\uE000", "", -1)
 	str = strings.Replace(str, "\u000D", "", -1)
 	str = strings.Replace(str, "、", "", -1)
-	str = strings.Replace(str, "/", "", -1)
 	str = strings.Replace(str, "！", "", -1)
 	str = strings.Replace(str, "|", "_", -1)
 	str = strings.Replace(str, "｜", "_", -1)
