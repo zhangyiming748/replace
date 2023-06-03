@@ -9,7 +9,6 @@ func ForFileName(str string) string {
 	str = strings.Replace(str, "》", ")", -1)
 	str = strings.Replace(str, "【", "(", -1)
 	str = strings.Replace(str, "】", ")", -1)
-	//（ ）
 	str = strings.Replace(str, "（", "(", -1)
 	str = strings.Replace(str, "）", ")", -1)
 	str = strings.Replace(str, "「", "(", -1)
@@ -25,16 +24,16 @@ func ForFileName(str string) string {
 	str = strings.Replace(str, "、", "", -1)
 	str = strings.Replace(str, "/", "", -1)
 	str = strings.Replace(str, "！", "", -1)
-	str = strings.Replace(str, "|", "_", -1)
-	str = strings.Replace(str, "｜", "_", -1)
-	str = strings.Replace(str, ":", "_", -1)
-	str = strings.Replace(str, " ", "_", -1)
+	str = strings.Replace(str, "|", "", -1)
+	str = strings.Replace(str, "｜", "", -1)
+	str = strings.Replace(str, ":", "", -1)
+	str = strings.Replace(str, " ", "", -1)
 
 	return str
 }
 func Replace(str string) string {
 	str = strings.Replace(str, "\n", "", -1)
-	str = strings.Replace(str, " ", "_", -1)
+	str = strings.Replace(str, " ", "", -1)
 	str = strings.Replace(str, "，", "_", -1)
 	str = strings.Replace(str, "。", "_", -1)
 	str = strings.Replace(str, ",", "_", -1)
